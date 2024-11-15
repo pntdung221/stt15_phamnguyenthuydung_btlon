@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.trangchu {
+    display: flex; /* Thêm flexbox */
+    flex-direction: column; /* Để các phần tử con nằm theo chiều dọc */
+    height: 100vh; /* Chiều cao toàn bộ viewport */
+}
+
+.content {
+    flex: 1; /* Chiếm không gian còn lại */
+}
+
+.container-fluid {
+    padding: 0; /* Bỏ phần đệm */
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0px;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.carousel .carousel-item {
+    min-height: 60vh; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;  
+    height: 3rem; 
+    background-color: rgba(0, 0, 0, 0.8);  
+    border-radius: 50%; 
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 4rem; 
+    font-weight: bold; 
+    color: rgb(0, 0, 0); 
+}
+
+footer {
+    background-color: #eac1a7;
+    padding: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+footer h6 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+}
+.email-input {
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-apply {
+    background-color: #ff914d;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-apply:hover {
+    background-color: #ff7514;
+}
+
