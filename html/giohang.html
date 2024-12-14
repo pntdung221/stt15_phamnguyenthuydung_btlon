@@ -132,7 +132,7 @@
                     <button class="btn btn-success w-100" onclick="redirectToCheckout()">Tiến hành thanh toán</button>
                     <script>
                         function redirectToCheckout() {
-                            window.location.href = "/html/thanhthoan.html"; 
+                            window.location.href = "../html/thanhthoan.html"; 
                         }
                     </script>
                     
@@ -186,6 +186,11 @@
         window.addEventListener('load', function() {
             updateTotal();
         });
+        function redirectToCheckout() {
+    console.log("Redirecting to checkout..."); // Kiểm tra xem hàm có được gọi không
+    window.location.href = "../html/thanhthoan.html"; 
+}
+
     </script>
     <footer>
         <div class="container">
